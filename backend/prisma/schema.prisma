@@ -13,7 +13,9 @@ model Candidate {
   lastName   String
   phone      String?
   email      String  @unique
-  callTime   String?
+  callDate   String?
+  startCallTime String?
+  FinishCallTime   String?
   linkedIn   String?
   gitHub     String?
   comment    String
