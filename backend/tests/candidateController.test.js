@@ -2,7 +2,7 @@ const request = require('supertest');
 const express = require('express');
 const bodyParser = require('body-parser');
 const candidateRoutes = require('../routes/candidateRoutes');
-const prisma = require('../__mocks__/prismaClient');  // Mocked Prisma client
+const prisma = require('../__mocks__/prismaClient'); 
 
 const app = express();
 app.use(bodyParser.json());

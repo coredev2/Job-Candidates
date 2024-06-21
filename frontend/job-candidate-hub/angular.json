@@ -31,9 +31,6 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
             "scripts": []
           },
           "configurations": {
@@ -81,9 +78,6 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "public/favicon.ico"
-            ],
-            "styles": [
-              "src/styles.scss"
             ],
             "scripts": []
           }
