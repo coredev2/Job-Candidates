@@ -26,7 +26,7 @@ export class CandidateFormComponent {
   constructor(private candidateService: CandidateService) {}
 
   submitForm(form: NgForm): void {
-    console.log('Submitting form:', this.candidate); // Add a log for debugging
+    console.log('Submitting form:', this.candidate);
     this.candidateService.addOrUpdateCandidate(this.candidate)
       .subscribe({
         next: response => {
@@ -34,7 +34,9 @@ export class CandidateFormComponent {
           form.resetForm();
         },
         error: error => {
-          console.error('Error adding/updating candidate:', error);
+          console.log('Error adding/updating candidate:', error);
+          alert('An error occurred. Please try again.');
+          form.resetForm();
         }
       });
   }
