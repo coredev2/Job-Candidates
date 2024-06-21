@@ -19,7 +19,9 @@ describe('Candidate Controller', () => {
       lastName: 'Doe',
       phone: '1234567890',
       email: 'john.doe@example.com',
-      callTime: '9 AM - 5 PM',
+      callDate: '2 Jan',
+      startCallTime: '2 PM',
+      FinishCallTime: '7 PM',
       linkedIn: 'https://www.linkedin.com/in/johndoe',
       gitHub: 'https://github.com/johndoe',
       comment: 'Great candidate!'
@@ -42,7 +44,9 @@ describe('Candidate Controller', () => {
       lastName: 'Doe',
       phone: '123456789',
       email: 'john.doe@example.com',
-      callTime: '10 AM - 6 PM',
+      callDate: '12 Jan',
+      startCallTime: '2 PM',
+      FinishCallTime: '7 PM',
       linkedIn: 'https://www.linkedin.com/in/johndoe',
       gitHub: 'https://github.com/johndoe',
       comment: 'Great candidate!'

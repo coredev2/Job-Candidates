@@ -1,0 +1,36 @@
+<!-- src/app/candidate-form/candidate-form.component.html -->
+
+<h2>Add or Update Candidate</h2>
+<form (ngSubmit)="submitForm(candidateForm)" #candidateForm="ngForm">
+  <label for="firstName">First Name*:</label>
+  <input type="text" id="firstName" name="firstName" required [(ngModel)]="candidate.firstName">
+
+  <label for="lastName">Last Name*:</label>
+  <input type="text" id="lastName" name="lastName" [(ngModel)]="candidate.lastName">
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" [(ngModel)]="candidate.phone">
+
+  <label for="email">Email*:</label>
+  <input type="email" id="email" name="email" required [(ngModel)]="candidate.email">
+
+  <label for="callDate">Best Date and Time to Call:</label>
+  <input type="Date" id="callDate" name="callDate" [(ngModel)]="candidate.callDate">
+
+  <label for="callTime"></label>
+    From
+    <input type="time" id="startCallTime" name="startCallTime" [(ngModel)]="candidate.startCallTime">
+    To
+    <input type="time" id="finishCallTime" name="finishCallTime" [(ngModel)]="candidate.FinishCallTime">
+
+  <label for="linkedin">LinkedIn Profile:</label>
+  <input type="text" id="linkedin" name="linkedin" [(ngModel)]="candidate.linkedIn">
+
+  <label for="github">GitHub Profile:</label>
+  <input type="text" id="github" name="github" [(ngModel)]="candidate.gitHub">
+
+  <label for="comment">Comment*:</label>
+  <textarea id="comment" name="comment" [(ngModel)]="candidate.comment"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
