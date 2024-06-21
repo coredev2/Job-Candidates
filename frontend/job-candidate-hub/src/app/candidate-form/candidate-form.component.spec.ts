@@ -1,4 +1,3 @@
-// candidate-form.component.spec.ts
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CandidateFormComponent } from './candidate-form.component';
 import { CandidateService } from '../services/candidate.service';

@@ -1,4 +1,3 @@
-// candidate-form.component.ts
 import { Component } from '@angular/core';
 import { Candidate } from '../models/models/candidate';
 import { CandidateService } from '../services/candidate.service';

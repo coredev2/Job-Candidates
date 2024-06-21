@@ -41,24 +41,19 @@ describe('CandidateService', () => {
         comment: 'Great candidate!'
       };
 
-      // Mock response data from the server
       const mockResponse = { success: true };
 
-      // Make the HTTP POST request
       service.addOrUpdateCandidate(candidate).subscribe(response => {
-        expect(response).toEqual(mockResponse); // Assert that the response matches the mock data
+        expect(response).toEqual(mockResponse);
       });
 
-      // Assert that the HttpClient.post method was called with the correct URL, data, and headers
       const req = httpTestingController.expectOne('http://localhost:5000/api/candidates');
       expect(req.request.method).toEqual('POST');
       expect(req.request.body).toEqual(candidate);
       expect(req.request.headers.get('Content-Type')).toEqual('application/json');
 
-      // Respond to the request with mock data
       req.flush(mockResponse);
 
-      // Important: Flush the request to resolve it
       httpTestingController.verify();
     });
   });
